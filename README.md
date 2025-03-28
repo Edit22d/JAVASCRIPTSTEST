@@ -23,7 +23,7 @@ Arrays are collection of indexed value element,mutable and also store ordered li
 
 # 3.
 (==)double equal signs are used to check if two values are equal and also are called loose equality operator
-(===)triple equal signs are used to check if two values are equal and also are called strict equality operator
+(===)triple equal signs are used to check datatypes are same and values are equal and also are called strict equality operator
 
 # 4.
 An event in javascript is an action or occurrence that can happen in browser when a user often to interact with the webpage.
