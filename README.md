@@ -36,7 +36,7 @@ document.addEventListener("click",function(){
 # 5.
 The forEach method is used to execute a function on each element of an array, 
                             while 
-The map method is used to create a new array with the results of applying a provided function on every element in this array
+The map method is used to create a new array .
          Similarity
 Both methods are used to operate on arrays arrays.
          Difference
