@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCKET LIST</title>
+    <link rel="stylesheet" href="sectionD.css">
+</head>
+<body>
+    <h2>Bucket List</h2>
+    <input type="text" id="itemInput" placeholder="Add a new item...">
+    <button onclick="addItem()">Add</button>
+    <ul id="bucket-list"></ul>
+    
+    <script>
+        function addItem() {
+            const input = document.getElementById('itemInput');
+            const itemText = input.value.trim();
+            if (itemText === '') return;
+
+            const list = document.getElementById('bucket-list');
+            const li = document.createElement('li');
+            li.classList.add('item');
+            li.innerHTML = `${itemText} <button onclick="deleteItem(this)">Delete</button>`;
+            list.appendChild(li);
+            input.value = '';
+        }
+
+        function deleteItem(button) {
+            button.parentElement.delete();
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
